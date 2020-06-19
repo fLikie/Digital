@@ -1,120 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
 
     <ImageView
         android:id="@+id/gpbTeam"
-        android:layout_width="130.6dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
         android:contentDescription="@string/group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/group1" />
 
-    <TextView
-        android:id="@+id/welcome"
-        android:layout_width="272dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="246dp"
-        android:fontFamily="@font/rubik"
-        android:gravity="center_horizontal|top"
-        android:lineSpacingExtra="0sp"
-        android:text="@string/welcomeToTeam"
-        android:textAppearance="@style/WelcomeText"
-        app:lineHeight="30sp" />
-
-    <TextView
-        android:id="@+id/enterAccText"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="323dp"
-        android:fontFamily="@font/rubik"
-        android:gravity="center_horizontal|top"
-        android:text="@string/enterAccText"
-        android:textAppearance="@style/enterAccText" />
-
-    <TextView
-        android:id="@+id/loginText"
-        android:layout_width="42dp"
-        android:layout_height="14dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="397dp"
-        android:fontFamily="@font/rubik"
-        android:gravity="top"
-        android:text="@string/loginText"
-        android:textAppearance="@style/loginText" />
-
-    <ImageView
-        android:id="@+id/loginFieldPic"
-        android:layout_width="318dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="420dp"
-        android:background="@drawable/rectangle_5"
-        android:contentDescription="@string/loginfield"
-        android:elevation="15dp" />
-
-    <EditText
-        android:id="@+id/loginEnter"
-        android:layout_width="275dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="431dp"
-        android:gravity="top"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:text="@string/loginEnter"
-        android:textAppearance="@style/loginEnter" />
-
-    <TextView
-        android:id="@+id/passwordText"
-        android:layout_width="50dp"
-        android:layout_height="14dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="480dp"
-        android:fontFamily="@font/rubik"
-        android:gravity="top"
-        android:text="@string/passwordText"
-        android:textAppearance="@style/passwordText" />
-
-    <ImageView
-        android:id="@+id/passwordFieldPic"
-        android:layout_width="318dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="503dp"
-        android:background="@drawable/rectangle_6"
-        android:contentDescription="@string/passwordField"
-        android:elevation="15dp" />
-
-    <EditText
-        android:id="@+id/passwordEnter"
-        android:layout_width="275dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="514dp"
-        android:gravity="top"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:text="@string/passwordEnter"
-        android:textAppearance="@style/passwordEnter" />
-
-    <Button
-        android:id="@+id/enterButton"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginTop="563dp"
-        android:background="@drawable/rectangle_7"
-        android:text="@string/enterText"
-        android:textColor="#FFFFFF"
-        android:textAlignment="center"
- />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginEnd="72dp"
+            android:fontFamily="@font/rubik"
+            android:lineSpacingExtra="0sp"
+            android:text="@string/welcomeToTeam"
+            android:textAlignment="center"
+            android:textAppearance="@style/WelcomeText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="30sp" />
+
+        <TextView
+            android:id="@+id/enterAccText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="@font/rubik"
+            android:text="@string/enterAccText"
+            android:textAlignment="center"
+            android:textAppearance="@style/enterAccText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/rubik"
+            android:gravity="top"
+            android:text="@string/loginText"
+            android:textAppearance="@style/loginText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enterAccText" />
+
+        <EditText
+            android:id="@+id/loginEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:gravity="top"
+            android:hint="@string/loginEnter"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAppearance="@style/loginEnter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginText" />
+
+        <TextView
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/rubik"
+            android:gravity="top"
+            android:hint="@string/passwordText"
+            android:textAppearance="@style/passwordText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginEnter" />
+
+        <EditText
+            android:id="@+id/passwordEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:gravity="top"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:hint="@string/passwordEnter"
+            android:textAppearance="@style/passwordEnter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordText" />
+
+        <Button
+            android:id="@+id/enterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/rectangle_7"
+            android:text="@string/enterText"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordEnter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
