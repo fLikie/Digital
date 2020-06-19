@@ -8,4 +8,85 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="WelcomeText">
+        <item name="android:textSize">
+            30sp
+        </item>
+        <item name="android:textColor">
+            #2C2C2C
+        </item>
+    </style>
+
+    <style name="enterAccText">
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #B3B3B3
+        </item>
+
+    </style>
+
+    <style name="loginText">
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #B3B3B3
+        </item>
+
+    </style>
+
+    <style name="loginEnter">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            #2C2C2C
+        </item>
+
+    </style>
+
+    <style name="passwordText">
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #B3B3B3
+        </item>
+
+    </style>
+
+    <style name="passwordEnter">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            #2C2C2C
+        </item>
+
+    </style>
+
+    <style name="enterText">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
 </resources>

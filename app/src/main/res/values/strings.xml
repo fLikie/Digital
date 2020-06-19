@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Digital</string>
+    <string name="group">group</string>
+    <string name="welcomeToTeam">Добро пожаловать в команду</string>
+    <string name="enterAccText">Пожалуйста, введите свои учетные данные, чтобы продолжить.</string>
+    <string name="loginText">логин</string>
+    <string name="loginfield">loginField</string>
+    <string name="loginEnter">введите логин</string>
+    <string name="passwordText">пароль</string>
+    <string name="passwordField">passwordField</string>
+    <string name="passwordEnter">введите пароль</string>
+    <string name="enterButton">enterButton</string>
+    <string name="enterText">Войти</string>
 </resources>
