@@ -44,15 +44,7 @@ class AuthFragment : MvpAppCompatFragment(), AuthView {
         }
     }
 
-    override fun registration() {
-
-    }
-
-    override fun auth() {
-
-    }
-
-    override fun showProgress() {
+    override fun showProgress(show: Boolean) {
 
     }
 
