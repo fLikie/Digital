@@ -14,4 +14,8 @@ class AuthPresenter @Inject constructor(
 ) : MvpPresenter<AuthView>() {
 
     private val disposable: Disposable? = null
+
+    fun login(login: String, password: String) {
+
+    }
 }

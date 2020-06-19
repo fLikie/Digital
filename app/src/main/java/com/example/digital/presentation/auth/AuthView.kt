@@ -7,4 +7,5 @@ interface AuthView : MvpView {
     fun auth()
     fun showProgress()
     fun showError()
+    fun showToast(text: String)
 }
