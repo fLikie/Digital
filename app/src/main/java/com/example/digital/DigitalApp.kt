@@ -25,7 +25,7 @@ class DigitalApp : Application() {
 
         Toothpick
             .openScope(Scopes.SERVER_SCOPE)
-            .installModules(ServerModule("server_url"))
+            .installModules(ServerModule("https://server_url.ru"))
     }
 
     private fun initToothpick() {

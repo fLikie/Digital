@@ -10,7 +10,7 @@ object Screens {
         override fun getFragment(): Fragment = MainFragment()
     }
 
-    object AuthScreen: SupportAppScreen() {
+    object AuthScreen : SupportAppScreen() {
         override fun getFragment(): Fragment = AuthFragment()
     }
 }
