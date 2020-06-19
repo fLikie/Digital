@@ -6,32 +6,34 @@
 
 
     <ImageView
-        android:id="@+id/gpbTeam"
-        android:layout_width="130.6dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="34dp"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="100dp"
         android:contentDescription="@string/group"
         app:srcCompat="@drawable/group1" />
 
     <TextView
-        android:id="@+id/welcome"
-        android:layout_width="272dp"
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
         android:layout_marginTop="246dp"
         android:fontFamily="@font/rubik"
         android:gravity="center_horizontal|top"
-        android:lineSpacingExtra="0sp"
         android:text="@string/welcomeToTeam"
         android:textAppearance="@style/WelcomeText"
         app:lineHeight="30sp" />
 
     <TextView
-        android:id="@+id/enterAccText"
-        android:layout_width="318dp"
+        android:id="@+id/authHintText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
         android:layout_marginTop="323dp"
         android:fontFamily="@font/rubik"
         android:gravity="center_horizontal|top"
@@ -40,43 +42,46 @@
 
     <TextView
         android:id="@+id/loginText"
-        android:layout_width="42dp"
-        android:layout_height="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="397dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="400dp"
         android:fontFamily="@font/rubik"
-        android:gravity="top"
         android:text="@string/loginText"
         android:textAppearance="@style/loginText" />
 
     <ImageView
         android:id="@+id/loginFieldPic"
-        android:layout_width="318dp"
-        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
         android:layout_marginTop="420dp"
         android:background="@drawable/rectangle_5"
         android:contentDescription="@string/loginfield"
-        android:elevation="15dp" />
+        />
 
     <EditText
         android:id="@+id/loginEnter"
-        android:layout_width="275dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="431dp"
-        android:gravity="top"
-        android:importantForAutofill="no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="442dp"
         android:inputType="text"
-        android:text="@string/loginEnter"
-        android:textAppearance="@style/loginEnter" />
+        android:hint="@string/loginEnter"
+        android:textAppearance="@style/loginEnter"
+        android:background="@null"
+        android:autofillHints="off" />
 
     <TextView
         android:id="@+id/passwordText"
-        android:layout_width="50dp"
-        android:layout_height="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="493dp"
         android:fontFamily="@font/rubik"
         android:gravity="top"
         android:text="@string/passwordText"
@@ -84,24 +89,24 @@
 
     <ImageView
         android:id="@+id/passwordFieldPic"
-        android:layout_width="318dp"
-        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="503dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginEnd="48dp"
         android:background="@drawable/rectangle_6"
-        android:contentDescription="@string/passwordField"
-        android:elevation="15dp" />
+        android:contentDescription="@string/passwordField" />
 
     <EditText
         android:id="@+id/passwordEnter"
-        android:layout_width="275dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="514dp"
-        android:gravity="top"
-        android:importantForAutofill="no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="535dp"
         android:inputType="textPassword"
-        android:text="@string/passwordEnter"
+        android:hint="@string/passwordEnter"
+        android:background="@null"
         android:textAppearance="@style/passwordEnter" />
 
     <Button
@@ -110,11 +115,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginEnd="48dp"
-        android:layout_marginTop="563dp"
+        android:layout_marginTop="590dp"
         android:background="@drawable/rectangle_7"
+        android:textDirection="locale"
         android:text="@string/enterText"
         android:textColor="#FFFFFF"
-        android:textAlignment="center"
- />
+        android:elevation="2dp"/>
 
 </FrameLayout>
