@@ -39,7 +39,7 @@ class AuthFragment : MvpAppCompatFragment(), AuthView {
             when {
                 loginEnter.text.isNullOrEmpty() -> showToast("Введите логин")
                 passwordEnter.text.isNullOrEmpty() -> showToast("Введите пароль")
-                else -> presenter.login(loginEnter.text.toString().trim(), passwordEnter.toString().trim())
+                else -> presenter.login(loginEnter.text.toString().trim(), passwordEnter.text.toString().trim())
             }
         }
     }

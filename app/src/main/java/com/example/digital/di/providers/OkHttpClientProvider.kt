@@ -11,13 +11,9 @@ class OkHttpClientProvider @Inject constructor() : Provider<OkHttpClient> {
     override fun get(): OkHttpClient = with(OkHttpClient.Builder()) {
         connectTimeout(TIMEOUT, TimeUnit.SECONDS)
         readTimeout(TIMEOUT, TimeUnit.SECONDS)
-
-        if (BuildConfig.DEBUG) {
             addNetworkInterceptor(
                 HttpLoggingInterceptor().apply { level = HttpLoggingInterceptor.Level.BODY }
             )
-        }
-
         build()
     }
 

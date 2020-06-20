@@ -1,6 +1,8 @@
 package com.example.digital.di.modules
 
 import android.content.Context
+import android.content.Context.MODE_PRIVATE
+import android.content.SharedPreferences
 import com.example.digital.di.providers.AppSchedulers
 import com.example.digital.di.providers.SchedulersProvider
 import ru.terrakok.cicerone.Cicerone
@@ -15,5 +17,6 @@ class AppModule(context: Context) : Module() {
         val cicerone = Cicerone.create()
         bind(Router::class.java).toInstance(cicerone.router)
         bind(NavigatorHolder::class.java).toInstance(cicerone.navigatorHolder)
+        bind(SharedPreferences::class.java).toInstance(context.getSharedPreferences("DIGITAL_APP", MODE_PRIVATE))
     }
 }
