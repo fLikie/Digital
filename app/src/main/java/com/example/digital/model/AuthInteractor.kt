@@ -2,7 +2,6 @@ package com.example.digital.model
 
 import com.example.digital.connections.DigitalApi
 import com.example.digital.di.providers.SchedulersProvider
-import com.example.digital.model.entity.AuthClass
 import com.example.digital.model.entity.ServerResponse
 import io.reactivex.Single
 import javax.inject.Inject
@@ -13,7 +12,7 @@ class AuthInteractor @Inject constructor(
 ) {
 
     fun login(login: String, password: String): Single<ServerResponse> =
-        api.login(AuthClass(login, password))
+        api.login(login, password)
             .subscribeOn(scheduler.io())
             .observeOn(scheduler.ui())
 }

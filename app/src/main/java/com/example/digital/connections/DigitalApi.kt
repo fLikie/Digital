@@ -11,8 +11,9 @@ import retrofit2.http.Query
 
 interface DigitalApi {
 
-    @POST("login")
+    @POST("oauth/token")
     fun login(
-        @Body authClass: AuthClass
+        @Query("email") login: String,
+        @Query("password") password: String
     ): Single<ServerResponse>
 }
